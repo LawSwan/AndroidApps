@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">GP Customizing Icons</string>
+    <string name="btn_convert">Convert Weight</string>
+    <string name="hint">Weight of Patient</string>
+    <string name="rad_kilo_to_lb">Convert Kilograms to Pounds</string>
+    <string name="rad_lb_to_kilo">Convert Pounds to Kilograms</string>
+    <string name="txt_title">Convert Patient Weight</string>
+    <style name="Base.Theme.GPCustomizingIcons" parent="Theme.Material3.DayNight">
+        
+        
+    </style>
+    <style name="Theme.GPCustomizingIcons" parent="Base.Theme.GPCustomizingIcons"/>
+</resources>

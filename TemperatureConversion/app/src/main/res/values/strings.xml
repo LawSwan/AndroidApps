@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Amber Lawson - Temperature Conversion</string>
+    <string name="app_title">Temperature Conversion</string>
+    <string name="subtitle">Fahrenheit ↔ Celsius Converter</string>
+    <string name="thermometer_desc">Thermometer illustration</string>
+    <string name="enter_temperature">Enter Temperature</string>
+    <string name="temperature_hint">e.g. 98.6</string>
+    <string name="select_conversion">Select Conversion</string>
+    <string name="f_to_c">Fahrenheit (°F) → Celsius (°C)</string>
+    <string name="c_to_f">Celsius (°C) → Fahrenheit (°F)</string>
+    <string name="convert">CONVERT</string>
+    <string name="result_label">RESULT</string>
+    <string name="result_placeholder">—</string>
+    <string name="bounds_fahrenheit">Valid range: −100°F to 250°F</string>
+    <string name="bounds_celsius">Valid range: −75°C to 125°C</string>
+</resources>

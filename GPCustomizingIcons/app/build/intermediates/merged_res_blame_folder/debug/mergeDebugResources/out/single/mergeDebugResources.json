@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-mdpi_ic_launcher_weight_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-mdpi/ic_launcher_weight_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxxhdpi_ic_launcher_weight_img_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxxhdpi/ic_launcher_weight_img_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xhdpi_ic_launcher_weight_img_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xhdpi/ic_launcher_weight_img_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xhdpi_ic_launcher_weight_img.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xhdpi/ic_launcher_weight_img.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-hdpi_ic_launcher_weight_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-hdpi/ic_launcher_weight_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxhdpi_ic_launcher_weight_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxhdpi/ic_launcher_weight_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher_weight_round.xml.flat",
+        "source": "com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher_weight_round.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/xml_backup_rules.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxhdpi_ic_launcher_weight_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxhdpi/ic_launcher_weight_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xhdpi_ic_launcher_weight_img_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xhdpi/ic_launcher_weight_img_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher_weight_img.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher_weight_img.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xhdpi_ic_launcher_weight_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xhdpi/ic_launcher_weight_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxhdpi_ic_launcher_weight.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxhdpi/ic_launcher_weight.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/layout_activity_main.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxxhdpi_ic_launcher_weight_img.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxxhdpi/ic_launcher_weight_img.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher_weight_round.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher_weight_round.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher_weight_img_round.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher_weight_img_round.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-hdpi_ic_launcher_weight_img_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-hdpi/ic_launcher_weight_img_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-mdpi_ic_launcher_weight_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-mdpi/ic_launcher_weight_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxhdpi_ic_launcher_weight_img.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxhdpi/ic_launcher_weight_img.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-hdpi_ic_launcher_weight.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-hdpi/ic_launcher_weight.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher_weight.xml.flat",
+        "source": "com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher_weight.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxhdpi_ic_launcher_weight_img_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxhdpi/ic_launcher_weight_img_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xhdpi_ic_launcher_weight_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xhdpi/ic_launcher_weight_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-hdpi_ic_launcher_weight_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-hdpi/ic_launcher_weight_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-hdpi_ic_launcher_weight_img.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-hdpi/ic_launcher_weight_img.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-mdpi_ic_launcher_weight.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-mdpi/ic_launcher_weight.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxxhdpi_ic_launcher_weight.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxxhdpi/ic_launcher_weight.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-mdpi_ic_launcher_weight_img.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-mdpi/ic_launcher_weight_img.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/drawable_ic_launcher_weight_img_background.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/drawable/ic_launcher_weight_img_background.xml"
+    },
+    {
+        "merged": "com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xhdpi_ic_launcher_weight.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xhdpi/ic_launcher_weight.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-mdpi_ic_launcher_weight_img_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-mdpi/ic_launcher_weight_img_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxxhdpi_ic_launcher_weight_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxxhdpi/ic_launcher_weight_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxxhdpi_ic_launcher_weight_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxxhdpi/ic_launcher_weight_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher_weight.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher_weight.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-mdpi_ic_launcher_weight_img_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-mdpi/ic_launcher_weight_img_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxxhdpi_ic_launcher_weight_img_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxxhdpi/ic_launcher_weight_img_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-xxhdpi_ic_launcher_weight_img_foreground.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-xxhdpi/ic_launcher_weight_img_foreground.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-debug-34:/mipmap-hdpi_ic_launcher_weight_img_round.webp.flat",
+        "source": "/Users/amberlawson/.gradle/daemon/9.4.1/com.example.gpcustomizingicons.app-main-36:/mipmap-hdpi/ic_launcher_weight_img_round.webp"
+    }
+]

@@ -1,0 +1,8 @@
+com.amberlawson.temperatureconversion.app-pngs-0 /Users/amberlawson/AndroidStudioProjects/TemperatureConversion/app/build/generated/res/pngs/debug
+com.amberlawson.temperatureconversion.app-updated_navigation_xml-1 /Users/amberlawson/AndroidStudioProjects/TemperatureConversion/app/build/generated/updated_navigation_xml/debug
+com.amberlawson.temperatureconversion.app-packageDebugResources-2 /Users/amberlawson/AndroidStudioProjects/TemperatureConversion/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.amberlawson.temperatureconversion.app-packageDebugResources-3 /Users/amberlawson/AndroidStudioProjects/TemperatureConversion/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.amberlawson.temperatureconversion.app-debug-4 /Users/amberlawson/AndroidStudioProjects/TemperatureConversion/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.amberlawson.temperatureconversion.app-debug-5 /Users/amberlawson/AndroidStudioProjects/TemperatureConversion/app/src/debug/res
+com.amberlawson.temperatureconversion.app-main-6 /Users/amberlawson/AndroidStudioProjects/TemperatureConversion/app/src/main/res
+gradleHome-0 /Users/amberlawson/.gradle

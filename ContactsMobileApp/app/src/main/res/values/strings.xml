@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Contacts Mobile App</string>
+
+    <string name="txt_contacts_header">Contacts</string>
+
+    <string name="contact1_name">Amber Lawson</string>
+    <string name="contact1_phone">(407) 555-1234</string>
+    <string name="contact1_email">amber.lawson@email.com</string>
+    <string name="contact1_address">123 Main St, Orlando, FL 32801</string>
+
+    <string name="contact2_name">Jordan Rivera</string>
+    <string name="contact2_phone">(407) 555-5678</string>
+    <string name="contact2_email">jordan.rivera@email.com</string>
+    <string name="contact2_address">456 Oak Ave, Orlando, FL 32803</string>
+
+    <string name="label_phone">Phone:</string>
+    <string name="label_email">Email:</string>
+    <string name="label_address">Address:</string>
+</resources>

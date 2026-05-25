@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_weight_img_background
+id btnConvert
+id main
+id radKiloToLb
+id radLbToKilo
+id radioGroup
+id txtResult
+id txtTitle
+id txtWeight
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+mipmap ic_launcher_weight
+mipmap ic_launcher_weight_foreground
+mipmap ic_launcher_weight_img
+mipmap ic_launcher_weight_img_foreground
+mipmap ic_launcher_weight_img_round
+mipmap ic_launcher_weight_round
+string app_name
+string btn_convert
+string hint
+string rad_kilo_to_lb
+string rad_lb_to_kilo
+string txt_title
+style Base.Theme.GPCustomizingIcons
+style Theme.GPCustomizingIcons
+xml backup_rules
+xml data_extraction_rules
