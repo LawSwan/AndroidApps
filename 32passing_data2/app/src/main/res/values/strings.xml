@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GP Passing Data</string>
+    <string name="txt_title">Amber Lawson - Send a Message</string>
+    <string name="hint">Enter a message to send</string>
+    <string name="txt_title2">Amber Lawson - Message Received</string>
+    <string name="btn_send">Send Message</string>
+</resources>
