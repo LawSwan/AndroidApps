@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">3.3 Vaildation</string>
+    <string name="txt_title">Amber Lawson &#8211; Electric Car Financing</string>
+    <string name="txt_num_yrs">Number of Years:</string>
+    <string name="hint1">Car Loan Amount</string>
+    <string name="hint2">Interest Rate</string>
+    <string name="btn_payment">Car Payment</string>
+    <string name="img_description">Number of Years Image</string>
+    <string name="txt_payment">Monthly Payment</string>
+    <string name="monthly_payment_result">Monthly Payment: $%s</string>
+    <string-array name="strarr_yrs">
+        <item>3 Years</item>
+        <item>4 Years</item>
+        <item>5 Years</item>
+    </string-array>
+</resources>
