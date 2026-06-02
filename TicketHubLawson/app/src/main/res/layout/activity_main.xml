@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a0033">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎵 CONCERT 🎵"
+            android:textSize="16sp"
+            android:textColor="#FFD700"
+            android:letterSpacing="0.3"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TICKET HUB"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#FF6EC7"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★ EST. 2024 ★"
+            android:textSize="12sp"
+            android:textColor="#FFD700"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Ticket stub divider -->
+
+        <ImageView
+            android:id="@+id/ivConcert"
+            android:layout_width="220dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/gz" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- - - - - - - - - - - - - - - - - - - -"
+            android:textColor="#FF6EC7"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT YOUR EVENT"
+            android:textSize="11sp"
+            android:textColor="#FFD700"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="6dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerEvents"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#2d0055"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUMBER OF TICKETS"
+            android:textSize="11sp"
+            android:textColor="#FFD700"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etTickets"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:hint="Enter number of tickets"
+            android:textColorHint="#FFD700"
+            android:textColor="#ffffff"
+            android:background="#2d0055"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🎟 CALCULATE COST 🎟"
+            android:textColor="#1a0033"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="#FFD700"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- - - - - - - - - - - - - - - - - - - -"
+            android:textColor="#FF6EC7"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF6EC7"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+</ScrollView>
