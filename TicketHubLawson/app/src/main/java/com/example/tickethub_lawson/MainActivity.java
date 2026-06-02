@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         tvResult = findViewById(R.id.tvResult);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-                this, R.array.events_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                this, R.array.events_array, R.layout.spinner_item);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spinnerEvents.setAdapter(adapter);
 
         btnCalculate.setOnClickListener(new View.OnClickListener() {
