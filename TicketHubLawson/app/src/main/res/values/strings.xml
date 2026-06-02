@@ -2,7 +2,7 @@
     <string name="app_name">Ticket Hub-Lawson</string>
     <string-array name="events_array">
         <item> Gorillaz Orlando FL Music Festival - $49.99</item>
-        <item> Fuck ice Delaney NJ Music Festival - $45.99</item>
+        <item> MeltIce Delaney NJ Music Festival - $45.99</item>
         <item> Foo Fighters DC Music Festival - $42.99</item>
     </string-array>
 </resources>
