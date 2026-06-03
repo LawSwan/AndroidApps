@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/donateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Screen title -->
+    <TextView
+        android:id="@+id/tvDonateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_donate"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#E87722"
+        android:padding="16dp"
+        android:gravity="center" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Section header: History of Service -->
+            <TextView
+                android:id="@+id/tvHistoryHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_history_of_service"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#888888"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Recipient Card: Hospital -->
+            <LinearLayout
+                android:id="@+id/cardHospital"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tvHospitalName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/recipient_hospital"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <Button
+                    android:id="@+id/btnDonateHospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_go"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#E87722"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+
+            <!-- Recipient Card: Day Care -->
+            <LinearLayout
+                android:id="@+id/cardDayCare"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tvDayCareName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/recipient_daycare"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <Button
+                    android:id="@+id/btnDonateDayCare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_go"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#E87722"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+
+            <!-- Recipient Card: Salvation Army -->
+            <LinearLayout
+                android:id="@+id/cardSalvationArmy"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tvSalvationArmyName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/recipient_salvation_army"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <Button
+                    android:id="@+id/btnDonateSalvationArmy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_go"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#E87722"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#EEEEEE" />
+
+            <!-- Slide to Donate (SeekBar used as slider) -->
+            <TextView
+                android:id="@+id/tvSlideLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_slide_to_donate"
+                android:textSize="13sp"
+                android:textColor="#888888"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <SeekBar
+                android:id="@+id/seekBarDonate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="#E87722"
+                android:thumbTint="#E87722"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Main Donate Button -->
+            <Button
+                android:id="@+id/btnDonate"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/btn_donate"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#E87722"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom nav bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavDonate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#F9F9F9">
+
+        <ImageButton
+            android:id="@+id/navSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Settings"
+            android:src="@android:drawable/ic_menu_preferences" />
+
+        <ImageButton
+            android:id="@+id/navServices"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Services Near Me"
+            android:src="@android:drawable/ic_menu_mapmode" />
+
+        <ImageButton
+            android:id="@+id/navDonate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Donate"
+            android:src="@android:drawable/ic_menu_send"
+            android:tint="#E87722" />
+
+        <ImageButton
+            android:id="@+id/navHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Donation History"
+            android:src="@android:drawable/ic_menu_recent_history" />
+
+        <ImageButton
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Profile"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+    </LinearLayout>
+
+</LinearLayout>

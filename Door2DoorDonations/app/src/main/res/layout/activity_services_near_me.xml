@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/servicesRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Screen title -->
+    <TextView
+        android:id="@+id/tvServicesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_services_screen"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#E87722"
+        android:padding="16dp"
+        android:gravity="center" />
+
+    <!-- Search bar -->
+    <EditText
+        android:id="@+id/etSearchRecipients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/recipient_card_bg"
+        android:hint="@string/label_search_recipients"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:autofillHints="" />
+
+    <!-- Map placeholder -->
+    <TextView
+        android:id="@+id/tvMapPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFF3E0"
+        android:gravity="center"
+        android:text="@string/label_map_placeholder"
+        android:textColor="#E87722"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <!-- Scrollable list of nearby recipients -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Children's Hospital -->
+            <LinearLayout
+                android:id="@+id/cardServiceHospital"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/imgServiceHospital"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Hospital"
+                    android:src="@android:drawable/ic_menu_compass"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:id="@+id/tvServiceHospital"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/service_childrens_hospital"
+                    android:textSize="15sp"
+                    android:textColor="#222222" />
+            </LinearLayout>
+
+            <!-- Sunshine Daycare -->
+            <LinearLayout
+                android:id="@+id/cardServiceDaycare"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/imgServiceDaycare"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Daycare"
+                    android:src="@android:drawable/ic_menu_compass"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:id="@+id/tvServiceDaycare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/service_sunshine_daycare"
+                    android:textSize="15sp"
+                    android:textColor="#222222" />
+            </LinearLayout>
+
+            <!-- Salvation Army -->
+            <LinearLayout
+                android:id="@+id/cardServiceSalvationArmy"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/imgServiceSalvationArmy"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Salvation Army"
+                    android:src="@android:drawable/ic_menu_compass"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:id="@+id/tvServiceSalvationArmy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/service_salvation_army_local"
+                    android:textSize="15sp"
+                    android:textColor="#222222" />
+            </LinearLayout>
+
+            <!-- Family Shelter -->
+            <LinearLayout
+                android:id="@+id/cardServiceFamilyShelter"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/imgServiceFamilyShelter"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Family Shelter"
+                    android:src="@android:drawable/ic_menu_compass"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:id="@+id/tvServiceFamilyShelter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/service_family_shelter"
+                    android:textSize="15sp"
+                    android:textColor="#222222" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom nav bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavServices"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#F9F9F9">
+
+        <ImageButton
+            android:id="@+id/navSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Settings"
+            android:src="@android:drawable/ic_menu_preferences" />
+
+        <ImageButton
+            android:id="@+id/navServices"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Services Near Me"
+            android:src="@android:drawable/ic_menu_mapmode"
+            android:tint="#E87722" />
+
+        <ImageButton
+            android:id="@+id/navDonate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Donate"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <ImageButton
+            android:id="@+id/navHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Donation History"
+            android:src="@android:drawable/ic_menu_recent_history" />
+
+        <ImageButton
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Profile"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+    </LinearLayout>
+
+</LinearLayout>

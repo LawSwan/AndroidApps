@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Screen title -->
+    <TextView
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_settings_screen"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#E87722"
+        android:padding="16dp"
+        android:gravity="center" />
+
+    <!-- Scrollable settings rows -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Username & Password row -->
+            <LinearLayout
+                android:id="@+id/rowUsernamePass"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tvUsernamePass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_username_pass"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <ImageView
+                    android:id="@+id/imgArrowUsernamePass"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Open"
+                    android:src="@android:drawable/ic_media_play" />
+            </LinearLayout>
+
+            <!-- Account / Payment row -->
+            <LinearLayout
+                android:id="@+id/rowAccountPayment"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tvAccountPayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_account_payment"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <ImageView
+                    android:id="@+id/imgArrowAccountPayment"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Open"
+                    android:src="@android:drawable/ic_media_play" />
+            </LinearLayout>
+
+            <!-- Location Services row -->
+            <LinearLayout
+                android:id="@+id/rowLocationServices"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tvLocationServices"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_location_services"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <Switch
+                    android:id="@+id/switchLocationServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <!-- Notifications row -->
+            <LinearLayout
+                android:id="@+id/rowNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tvNotifications"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_notifications"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <Switch
+                    android:id="@+id/switchNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <!-- Help & Support row -->
+            <LinearLayout
+                android:id="@+id/rowHelpSupport"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/recipient_card_bg"
+                android:layout_marginBottom="20dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tvHelpSupport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_help_support"
+                    android:textSize="16sp"
+                    android:textColor="#222222" />
+
+                <ImageView
+                    android:id="@+id/imgArrowHelpSupport"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Open"
+                    android:src="@android:drawable/ic_media_play" />
+            </LinearLayout>
+
+            <!-- Log Out button -->
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/label_log_out"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#E87722" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom nav bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavSettings"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#F9F9F9">
+
+        <ImageButton
+            android:id="@+id/navSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Settings"
+            android:src="@android:drawable/ic_menu_preferences"
+            android:tint="#E87722" />
+
+        <ImageButton
+            android:id="@+id/navServices"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Services Near Me"
+            android:src="@android:drawable/ic_menu_mapmode" />
+
+        <ImageButton
+            android:id="@+id/navDonate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Donate"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <ImageButton
+            android:id="@+id/navHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Donation History"
+            android:src="@android:drawable/ic_menu_recent_history" />
+
+        <ImageButton
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Profile"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+    </LinearLayout>
+
+</LinearLayout>
