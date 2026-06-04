@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Creating a Splash Screen &amp; MediaPlayer</string>
+    <string name="txt_title">Aloha Music</string>
+    <string name="txt_splash">Sounds of Hawaii</string>
+    <string name="ukulele">Ukulele Image</string>
+    <string name="drums">Drums Image</string>
+    <string name="btn_ukulele">Play Ukulele Song</string>
+    <string name="btn_drums">Play Drums Song</string>
+</resources>
