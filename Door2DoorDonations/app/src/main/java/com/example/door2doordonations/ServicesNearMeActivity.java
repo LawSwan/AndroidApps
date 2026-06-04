@@ -2,6 +2,9 @@ package com.example.door2doordonations;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -12,32 +15,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ServicesNearMeActivity extends AppCompatActivity {
 
-    // Screen title
     private TextView tvServicesTitle;
 
-    // Search + map
     private EditText etSearchRecipients;
     private TextView tvMapPlaceholder;
 
-    // Service cards
     private LinearLayout cardServiceHospital;
     private LinearLayout cardServiceDaycare;
     private LinearLayout cardServiceSalvationArmy;
     private LinearLayout cardServiceFamilyShelter;
 
-    // Service icons
     private ImageView imgServiceHospital;
     private ImageView imgServiceDaycare;
     private ImageView imgServiceSalvationArmy;
     private ImageView imgServiceFamilyShelter;
 
-    // Service labels
     private TextView tvServiceHospital;
     private TextView tvServiceDaycare;
     private TextView tvServiceSalvationArmy;
     private TextView tvServiceFamilyShelter;
 
-    // Bottom nav
     private ImageButton navSettings;
     private ImageButton navServices;
     private ImageButton navDonate;
@@ -49,7 +46,6 @@ public class ServicesNearMeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_services_near_me);
 
-        // Bind views
         tvServicesTitle           = findViewById(R.id.tvServicesTitle);
         etSearchRecipients        = findViewById(R.id.etSearchRecipients);
         tvMapPlaceholder          = findViewById(R.id.tvMapPlaceholder);
@@ -69,19 +65,65 @@ public class ServicesNearMeActivity extends AppCompatActivity {
         tvServiceSalvationArmy    = findViewById(R.id.tvServiceSalvationArmy);
         tvServiceFamilyShelter    = findViewById(R.id.tvServiceFamilyShelter);
 
-        // Bottom nav
         navSettings = findViewById(R.id.navSettings);
         navServices = findViewById(R.id.navServices);
         navDonate   = findViewById(R.id.navDonate);
         navHistory  = findViewById(R.id.navHistory);
         navProfile  = findViewById(R.id.navProfile);
 
-        navSettings.setOnClickListener(v -> startActivity(new Intent(this, SettingsActivity.class)));
-        navServices.setOnClickListener(v -> {
-            if (!(this instanceof ServicesNearMeActivity)) {
-                startActivity(new Intent(this, ServicesNearMeActivity.class));
+        wireCardClicks();
+        wireSearch();
+        wireBottomNav();
+    }
+
+    private void wireCardClicks() {
+        cardServiceHospital.setOnClickListener(v ->
+                openDonate(tvServiceHospital.getText().toString()));
+        cardServiceDaycare.setOnClickListener(v ->
+                openDonate(tvServiceDaycare.getText().toString()));
+        cardServiceSalvationArmy.setOnClickListener(v ->
+                openDonate(tvServiceSalvationArmy.getText().toString()));
+        cardServiceFamilyShelter.setOnClickListener(v ->
+                openDonate(tvServiceFamilyShelter.getText().toString()));
+    }
+
+    private void openDonate(String fullLabel) {
+        // strip "— 1.2 mi" trailing distance for a cleaner recipient name
+        String recipient = fullLabel;
+        int dash = fullLabel.indexOf('—');
+        if (dash > 0) recipient = fullLabel.substring(0, dash).trim();
+
+        Intent intent = new Intent(this, DonateActivity.class);
+        intent.putExtra(DonateActivity.EXTRA_RECIPIENT, recipient);
+        startActivity(intent);
+    }
+
+    private void wireSearch() {
+        etSearchRecipients.addTextChangedListener(new TextWatcher() {
+            @Override public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+            @Override public void onTextChanged(CharSequence s, int start, int before, int count) { }
+            @Override
+            public void afterTextChanged(Editable s) {
+                String q = s.toString().trim().toLowerCase();
+                applyFilter(cardServiceHospital, tvServiceHospital.getText().toString(), q);
+                applyFilter(cardServiceDaycare, tvServiceDaycare.getText().toString(), q);
+                applyFilter(cardServiceSalvationArmy, tvServiceSalvationArmy.getText().toString(), q);
+                applyFilter(cardServiceFamilyShelter, tvServiceFamilyShelter.getText().toString(), q);
             }
         });
+    }
+
+    private void applyFilter(View card, String label, String query) {
+        if (query.isEmpty() || label.toLowerCase().contains(query)) {
+            card.setVisibility(View.VISIBLE);
+        } else {
+            card.setVisibility(View.GONE);
+        }
+    }
+
+    private void wireBottomNav() {
+        navSettings.setOnClickListener(v -> startActivity(new Intent(this, SettingsActivity.class)));
+        navServices.setOnClickListener(v -> { /* already here */ });
         navDonate.setOnClickListener(v -> startActivity(new Intent(this, DonateActivity.class)));
         navHistory.setOnClickListener(v -> startActivity(new Intent(this, HistoryActivity.class)));
         navProfile.setOnClickListener(v -> startActivity(new Intent(this, ProfileActivity.class)));

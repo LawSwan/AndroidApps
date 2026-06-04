@@ -15,7 +15,7 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#E87722"
-        android:padding="16dp"
+        android:padding="55dp"
         android:gravity="center" />
 
     <!-- Scrollable content -->
