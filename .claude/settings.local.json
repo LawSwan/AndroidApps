@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"/Users/amberlawson/AndroidStudioProjects/Student Files/Week 3 GP - Input Validation/opening.png\" \"/Users/amberlawson/AndroidStudioProjects/3.3Vaildation/app/src/main/res/drawable/img_opening.png\")",
+      "Bash(cp \"/Users/amberlawson/AndroidStudioProjects/Student Files/Week 3 GP - Input Validation/three.png\" \"/Users/amberlawson/AndroidStudioProjects/3.3Vaildation/app/src/main/res/drawable/img_three.png\")",
+      "Bash(cp \"/Users/amberlawson/AndroidStudioProjects/Student Files/Week 3 GP - Input Validation/four.png\" \"/Users/amberlawson/AndroidStudioProjects/3.3Vaildation/app/src/main/res/drawable/img_four.png\")",
+      "Bash(cp \"/Users/amberlawson/AndroidStudioProjects/Student Files/Week 3 GP - Input Validation/five.png\" \"/Users/amberlawson/AndroidStudioProjects/3.3Vaildation/app/src/main/res/drawable/img_five.png\")"
+    ]
+  }
+}

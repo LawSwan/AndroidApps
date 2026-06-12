@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GP Gridview Images</string>
+    <string name="txt_eagle">Bald Eagle</string>
+    <string name="txt_elephant">Walking Elephant</string>
+    <string name="txt_gorilla">Gorilla Eating</string>
+    <string name="txt_panda">Panda Bear</string>
+    <string name="txt_panther">Stalking Panther</string>
+    <string name="txt_polarbear">Polar Bear and Cubs</string>
+</resources>
