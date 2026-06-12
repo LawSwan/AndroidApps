@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Amber Lawson - Photo Gallery</string>
+    <string name="splash_title">My Photo Gallery</string>
+    <string name="user_name">Amber Lawson</string>
+    <string name="img_desc">Gallery Image</string>
+    <string name="large_view_label">Large View</string>
+    <string name="large_img_desc">Large View of selected image</string>
+</resources>
