@@ -2,6 +2,7 @@ package com.example.door2doordonations;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -15,27 +16,8 @@ import java.util.Locale;
 public class HistoryActivity extends AppCompatActivity {
 
     private TextView tvHistoryTitle;
-
-    private LinearLayout cardHistoryHospital;
-    private LinearLayout cardHistoryDaycare;
-    private LinearLayout cardHistorySalvationArmy;
-    private LinearLayout cardHistoryFamilyShelter;
-
-    private TextView tvHistoryHospitalName;
-    private TextView tvHistoryHospitalStatus;
-    private TextView tvHistoryHospitalAmount;
-
-    private TextView tvHistoryDaycareName;
-    private TextView tvHistoryDaycareStatus;
-    private TextView tvHistoryDaycareAmount;
-
-    private TextView tvHistorySalvationArmyName;
-    private TextView tvHistorySalvationArmyStatus;
-    private TextView tvHistorySalvationArmyAmount;
-
-    private TextView tvHistoryFamilyShelterName;
-    private TextView tvHistoryFamilyShelterStatus;
-    private TextView tvHistoryFamilyShelterAmount;
+    private LinearLayout historyListContainer;
+    private TextView tvHistoryEmpty;
 
     private ImageButton navSettings;
     private ImageButton navServices;
@@ -43,57 +25,20 @@ public class HistoryActivity extends AppCompatActivity {
     private ImageButton navHistory;
     private ImageButton navProfile;
 
-    private LinearLayout[] cards;
-    private TextView[] names;
-    private TextView[] statuses;
-    private TextView[] amounts;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
-        tvHistoryTitle = findViewById(R.id.tvHistoryTitle);
-
-        cardHistoryHospital       = findViewById(R.id.cardHistoryHospital);
-        cardHistoryDaycare        = findViewById(R.id.cardHistoryDaycare);
-        cardHistorySalvationArmy  = findViewById(R.id.cardHistorySalvationArmy);
-        cardHistoryFamilyShelter  = findViewById(R.id.cardHistoryFamilyShelter);
-
-        tvHistoryHospitalName     = findViewById(R.id.tvHistoryHospitalName);
-        tvHistoryHospitalStatus   = findViewById(R.id.tvHistoryHospitalStatus);
-        tvHistoryHospitalAmount   = findViewById(R.id.tvHistoryHospitalAmount);
-
-        tvHistoryDaycareName      = findViewById(R.id.tvHistoryDaycareName);
-        tvHistoryDaycareStatus    = findViewById(R.id.tvHistoryDaycareStatus);
-        tvHistoryDaycareAmount    = findViewById(R.id.tvHistoryDaycareAmount);
-
-        tvHistorySalvationArmyName   = findViewById(R.id.tvHistorySalvationArmyName);
-        tvHistorySalvationArmyStatus = findViewById(R.id.tvHistorySalvationArmyStatus);
-        tvHistorySalvationArmyAmount = findViewById(R.id.tvHistorySalvationArmyAmount);
-
-        tvHistoryFamilyShelterName   = findViewById(R.id.tvHistoryFamilyShelterName);
-        tvHistoryFamilyShelterStatus = findViewById(R.id.tvHistoryFamilyShelterStatus);
-        tvHistoryFamilyShelterAmount = findViewById(R.id.tvHistoryFamilyShelterAmount);
+        tvHistoryTitle       = findViewById(R.id.tvHistoryTitle);
+        historyListContainer = findViewById(R.id.historyListContainer);
+        tvHistoryEmpty       = findViewById(R.id.tvHistoryEmpty);
 
         navSettings = findViewById(R.id.navSettings);
         navServices = findViewById(R.id.navServices);
         navDonate   = findViewById(R.id.navDonate);
         navHistory  = findViewById(R.id.navHistory);
         navProfile  = findViewById(R.id.navProfile);
-
-        cards = new LinearLayout[]{
-                cardHistoryHospital, cardHistoryDaycare,
-                cardHistorySalvationArmy, cardHistoryFamilyShelter };
-        names = new TextView[]{
-                tvHistoryHospitalName, tvHistoryDaycareName,
-                tvHistorySalvationArmyName, tvHistoryFamilyShelterName };
-        statuses = new TextView[]{
-                tvHistoryHospitalStatus, tvHistoryDaycareStatus,
-                tvHistorySalvationArmyStatus, tvHistoryFamilyShelterStatus };
-        amounts = new TextView[]{
-                tvHistoryHospitalAmount, tvHistoryDaycareAmount,
-                tvHistorySalvationArmyAmount, tvHistoryFamilyShelterAmount };
 
         wireBottomNav();
     }
@@ -106,23 +51,52 @@ public class HistoryActivity extends AppCompatActivity {
 
     private void renderHistory() {
         List<DonationStore.Donation> donations = new DonationStore(this).getAll();
-        int shown = Math.min(donations.size(), cards.length);
 
-        for (int i = 0; i < shown; i++) {
-            DonationStore.Donation d = donations.get(i);
-            cards[i].setVisibility(View.VISIBLE);
-            names[i].setText(d.recipient + " · " + d.date);
-            statuses[i].setText(d.status);
-            amounts[i].setText(String.format(Locale.US, "$%.2f", d.amount));
-        }
-        for (int i = shown; i < cards.length; i++) {
-            cards[i].setVisibility(View.GONE);
+        // Clear existing cards but keep the empty-state TextView (at index 0)
+        int childCount = historyListContainer.getChildCount();
+        if (childCount > 1) {
+            historyListContainer.removeViews(1, childCount - 1);
         }
 
         if (donations.isEmpty()) {
-            tvHistoryTitle.setText("Donation History — none yet");
-        } else {
             tvHistoryTitle.setText(R.string.title_history_screen);
+            tvHistoryEmpty.setVisibility(View.VISIBLE);
+            return;
+        }
+
+        tvHistoryEmpty.setVisibility(View.GONE);
+        tvHistoryTitle.setText(R.string.title_history_screen);
+
+        LayoutInflater inflater = LayoutInflater.from(this);
+        for (DonationStore.Donation d : donations) {
+            View card = inflater.inflate(R.layout.item_history_card, historyListContainer, false);
+
+            TextView name     = card.findViewById(R.id.itemHistoryName);
+            TextView category = card.findViewById(R.id.itemHistoryCategory);
+            TextView pickup   = card.findViewById(R.id.itemHistoryPickup);
+            TextView status   = card.findViewById(R.id.itemHistoryStatus);
+            TextView amount   = card.findViewById(R.id.itemHistoryAmount);
+
+            name.setText(d.recipient + " · " + d.date);
+
+            if (d.category != null && !d.category.isEmpty()) {
+                category.setText(d.category.toUpperCase(Locale.US));
+                category.setVisibility(View.VISIBLE);
+            } else {
+                category.setVisibility(View.GONE);
+            }
+
+            if (d.pickupTime != null && !d.pickupTime.isEmpty()) {
+                pickup.setText("Pickup: " + d.pickupTime);
+                pickup.setVisibility(View.VISIBLE);
+            } else {
+                pickup.setVisibility(View.GONE);
+            }
+
+            status.setText(d.status);
+            amount.setText(String.format(Locale.US, "$%.2f", d.amount));
+
+            historyListContainer.addView(card);
         }
     }
 

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="@drawable/app_background_gradient">
 
     <!-- Screen title -->
     <TextView
@@ -12,10 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_services_screen"
-        android:textSize="22sp"
+        android:textSize="26sp"
         android:textStyle="bold"
-        android:textColor="#E87722"
-        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:letterSpacing="0.02"
+        android:paddingTop="48dp"
+        android:paddingBottom="16dp"
         android:gravity="center" />
 
     <!-- Search bar -->
@@ -26,11 +28,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/recipient_card_bg"
+        android:background="@drawable/card_modern_bg"
         android:hint="@string/label_search_recipients"
         android:inputType="text"
-        android:padding="12dp"
+        android:padding="14dp"
         android:textSize="14sp"
+        android:textColorHint="#888888"
         android:autofillHints="" />
 
     <!-- Map placeholder -->
@@ -41,10 +44,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="#FFF3E0"
+        android:background="@drawable/card_modern_bg"
         android:gravity="center"
         android:text="@string/label_map_placeholder"
-        android:textColor="#E87722"
+        android:textColor="@color/purple_primary"
         android:textSize="16sp"
         android:textStyle="italic" />
 
@@ -68,7 +71,7 @@
                 android:layout_height="64dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
+                android:background="@drawable/card_modern_bg"
                 android:layout_marginBottom="12dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp">
@@ -98,7 +101,7 @@
                 android:layout_height="64dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
+                android:background="@drawable/card_modern_bg"
                 android:layout_marginBottom="12dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp">
@@ -128,7 +131,7 @@
                 android:layout_height="64dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
+                android:background="@drawable/card_modern_bg"
                 android:layout_marginBottom="12dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp">
@@ -158,7 +161,7 @@
                 android:layout_height="64dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
+                android:background="@drawable/card_modern_bg"
                 android:layout_marginBottom="16dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp">
@@ -188,9 +191,9 @@
     <LinearLayout
         android:id="@+id/bottomNavServices"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="64dp"
         android:orientation="horizontal"
-        android:background="#F9F9F9">
+        android:background="@drawable/nav_bar_translucent_bg">
 
         <ImageButton
             android:id="@+id/navSettings"

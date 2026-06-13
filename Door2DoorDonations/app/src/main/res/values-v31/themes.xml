@@ -1,14 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Door2DoorDonations" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-    </style>
-
-    <style name="Theme.Door2DoorDonations" parent="Base.Theme.Door2DoorDonations" />
-
-    <!-- Splash theme for API < 31 -->
+<resources>
     <style name="Theme.Door2DoorDonations.Splash" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/app_background_gradient</item>
+        <!-- On API 31+, setting windowIsTranslucent to true usually disables the system splash screen -->
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>

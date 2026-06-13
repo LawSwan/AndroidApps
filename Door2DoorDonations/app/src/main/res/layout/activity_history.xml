@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="@drawable/app_background_gradient">
 
     <!-- Screen title -->
     <TextView
@@ -12,10 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_history_screen"
-        android:textSize="22sp"
+        android:textSize="26sp"
         android:textStyle="bold"
-        android:textColor="#E87722"
-        android:padding="55dp"
+        android:textColor="#FFFFFF"
+        android:letterSpacing="0.02"
+        android:paddingTop="56dp"
+        android:paddingBottom="24dp"
         android:gravity="center" />
 
     <!-- Scrollable history list -->
@@ -26,193 +28,21 @@
         android:padding="16dp">
 
         <LinearLayout
+            android:id="@+id/historyListContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- History row: Hospital -->
-            <LinearLayout
-                android:id="@+id/cardHistoryHospital"
+            <TextView
+                android:id="@+id/tvHistoryEmpty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
-                android:layout_marginBottom="12dp"
-                android:padding="14dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tvHistoryHospitalName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/history_item_hospital"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#222222" />
-
-                    <TextView
-                        android:id="@+id/tvHistoryHospitalStatus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/label_status_delivered"
-                        android:textSize="12sp"
-                        android:textColor="#888888"
-                        android:layout_marginTop="2dp" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvHistoryHospitalAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/label_donation_amount"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#E87722" />
-            </LinearLayout>
-
-            <!-- History row: Daycare -->
-            <LinearLayout
-                android:id="@+id/cardHistoryDaycare"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
-                android:layout_marginBottom="12dp"
-                android:padding="14dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tvHistoryDaycareName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/history_item_daycare"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#222222" />
-
-                    <TextView
-                        android:id="@+id/tvHistoryDaycareStatus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/label_status_delivered"
-                        android:textSize="12sp"
-                        android:textColor="#888888"
-                        android:layout_marginTop="2dp" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvHistoryDaycareAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/label_donation_amount"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#E87722" />
-            </LinearLayout>
-
-            <!-- History row: Salvation Army -->
-            <LinearLayout
-                android:id="@+id/cardHistorySalvationArmy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
-                android:layout_marginBottom="12dp"
-                android:padding="14dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tvHistorySalvationArmyName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/history_item_salvation_army"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#222222" />
-
-                    <TextView
-                        android:id="@+id/tvHistorySalvationArmyStatus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/label_status_delivered"
-                        android:textSize="12sp"
-                        android:textColor="#888888"
-                        android:layout_marginTop="2dp" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvHistorySalvationArmyAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/label_donation_amount"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#E87722" />
-            </LinearLayout>
-
-            <!-- History row: Family Shelter -->
-            <LinearLayout
-                android:id="@+id/cardHistoryFamilyShelter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
-                android:layout_marginBottom="12dp"
-                android:padding="14dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tvHistoryFamilyShelterName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/history_item_family_shelter"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="#222222" />
-
-                    <TextView
-                        android:id="@+id/tvHistoryFamilyShelterStatus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/label_status_delivered"
-                        android:textSize="12sp"
-                        android:textColor="#888888"
-                        android:layout_marginTop="2dp" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvHistoryFamilyShelterAmount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/label_donation_amount"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#E87722" />
-            </LinearLayout>
+                android:gravity="center"
+                android:text="No donations yet — your history will appear here."
+                android:textColor="#F2FFFFFF"
+                android:textSize="14sp"
+                android:padding="24dp"
+                android:visibility="gone" />
 
         </LinearLayout>
     </ScrollView>
@@ -221,9 +51,9 @@
     <LinearLayout
         android:id="@+id/bottomNavHistory"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="64dp"
         android:orientation="horizontal"
-        android:background="#F9F9F9">
+        android:background="@drawable/nav_bar_translucent_bg">
 
         <ImageButton
             android:id="@+id/navSettings"
@@ -260,7 +90,7 @@
             android:background="?attr/selectableItemBackground"
             android:contentDescription="Donation History"
             android:src="@android:drawable/ic_menu_recent_history"
-            android:tint="#E87722" />
+            android:tint="@color/purple_primary" />
 
         <ImageButton
             android:id="@+id/navProfile"

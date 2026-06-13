@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="@drawable/app_background_gradient">
 
     <!-- Screen title -->
     <TextView
@@ -12,10 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_donate"
-        android:textSize="22sp"
+        android:textSize="26sp"
         android:textStyle="bold"
-        android:textColor="#E87722"
-        android:padding="55dp"
+        android:textColor="#FFFFFF"
+        android:letterSpacing="0.02"
+        android:paddingTop="56dp"
+        android:paddingBottom="20dp"
         android:gravity="center" />
 
     <!-- Scrollable content -->
@@ -30,15 +32,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Section header: History of Service -->
+            <!-- Section header: Recipient -->
             <TextView
                 android:id="@+id/tvHistoryHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_history_of_service"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
-                android:textColor="#888888"
+                android:textColor="#F2FFFFFF"
+                android:letterSpacing="0.08"
                 android:layout_marginBottom="12dp" />
 
             <!-- Recipient Card: Hospital -->
@@ -48,10 +51,10 @@
                 android:layout_height="64dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
-                android:layout_marginBottom="12dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:background="@drawable/card_modern_bg"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="12dp">
 
                 <TextView
                     android:id="@+id/tvHospitalName"
@@ -65,12 +68,14 @@
                 <Button
                     android:id="@+id/btnDonateHospital"
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
+                    android:layout_height="40dp"
                     android:text="@string/btn_go"
                     android:textColor="#FFFFFF"
-                    android:backgroundTint="#E87722"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp" />
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_secondary_gradient"
+                    android:stateListAnimator="@null"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp" />
             </LinearLayout>
 
             <!-- Recipient Card: Day Care -->
@@ -80,10 +85,10 @@
                 android:layout_height="64dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
-                android:layout_marginBottom="12dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:background="@drawable/card_modern_bg"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="12dp">
 
                 <TextView
                     android:id="@+id/tvDayCareName"
@@ -97,12 +102,14 @@
                 <Button
                     android:id="@+id/btnDonateDayCare"
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
+                    android:layout_height="40dp"
                     android:text="@string/btn_go"
                     android:textColor="#FFFFFF"
-                    android:backgroundTint="#E87722"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp" />
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_secondary_gradient"
+                    android:stateListAnimator="@null"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp" />
             </LinearLayout>
 
             <!-- Recipient Card: Salvation Army -->
@@ -112,10 +119,10 @@
                 android:layout_height="64dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/recipient_card_bg"
-                android:layout_marginBottom="24dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:background="@drawable/card_modern_bg"
+                android:layout_marginBottom="22dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="12dp">
 
                 <TextView
                     android:id="@+id/tvSalvationArmyName"
@@ -129,29 +136,188 @@
                 <Button
                     android:id="@+id/btnDonateSalvationArmy"
                     android:layout_width="wrap_content"
-                    android:layout_height="36dp"
+                    android:layout_height="40dp"
                     android:text="@string/btn_go"
                     android:textColor="#FFFFFF"
-                    android:backgroundTint="#E87722"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp" />
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_secondary_gradient"
+                    android:stateListAnimator="@null"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp" />
             </LinearLayout>
 
-            <!-- Divider -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="20dp"
-                android:background="#EEEEEE" />
+            <!-- Section: Amount -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_amount"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#F2FFFFFF"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="10dp" />
 
-            <!-- Slide to Donate (SeekBar used as slider) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="22dp">
+
+                <TextView
+                    android:id="@+id/chipAmount10"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:gravity="center"
+                    android:text="@string/amount_10"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:id="@+id/chipAmount20"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:gravity="center"
+                    android:text="@string/amount_20"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:id="@+id/chipAmount50"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:gravity="center"
+                    android:text="@string/amount_50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:id="@+id/chipAmountCustom"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/chip_unselected"
+                    android:gravity="center"
+                    android:text="@string/amount_custom"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+            </LinearLayout>
+
+            <!-- Section: Category -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_category"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#F2FFFFFF"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="22dp">
+
+                <TextView
+                    android:id="@+id/chipCatClothes"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:gravity="center"
+                    android:text="@string/cat_clothes"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:id="@+id/chipCatFood"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:gravity="center"
+                    android:text="@string/cat_food"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:id="@+id/chipCatToys"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/chip_unselected"
+                    android:gravity="center"
+                    android:text="@string/cat_toys"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:id="@+id/chipCatMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chip_unselected"
+                    android:gravity="center"
+                    android:text="@string/cat_money"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+            </LinearLayout>
+
+            <!-- Section: Pickup time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_pickup_time"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#F2FFFFFF"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/btnPickupTime"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/card_modern_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="@string/placeholder_pickup_time"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+                android:drawableTint="@color/purple_primary"
+                android:layout_marginBottom="22dp" />
+
+            <!-- Slide to confirm -->
             <TextView
                 android:id="@+id/tvSlideLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_slide_to_donate"
                 android:textSize="13sp"
-                android:textColor="#888888"
+                android:textColor="#F2FFFFFF"
                 android:layout_marginBottom="8dp"
                 android:gravity="center"
                 android:layout_gravity="center" />
@@ -159,24 +325,28 @@
             <SeekBar
                 android:id="@+id/seekBarDonate"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="40dp"
                 android:max="100"
                 android:progress="0"
-                android:progressTint="#E87722"
-                android:thumbTint="#E87722"
+                android:progressDrawable="@drawable/slider_track_gradient"
+                android:thumb="@drawable/slider_thumb"
+                android:minHeight="28dp"
+                android:maxHeight="28dp"
                 android:layout_marginBottom="20dp" />
 
             <!-- Main Donate Button -->
             <Button
                 android:id="@+id/btnDonate"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
+                android:layout_height="56dp"
                 android:text="@string/btn_donate"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:backgroundTint="#E87722"
-                android:layout_marginBottom="8dp" />
+                android:letterSpacing="0.1"
+                android:background="@drawable/btn_primary_gradient"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="16dp" />
 
         </LinearLayout>
     </ScrollView>
@@ -185,9 +355,9 @@
     <LinearLayout
         android:id="@+id/bottomNavDonate"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="64dp"
         android:orientation="horizontal"
-        android:background="#F9F9F9">
+        android:background="@drawable/nav_bar_translucent_bg">
 
         <ImageButton
             android:id="@+id/navSettings"
@@ -215,7 +385,7 @@
             android:background="?attr/selectableItemBackground"
             android:contentDescription="Donate"
             android:src="@android:drawable/ic_menu_send"
-            android:tint="#E87722" />
+            android:tint="@color/purple_primary" />
 
         <ImageButton
             android:id="@+id/navHistory"

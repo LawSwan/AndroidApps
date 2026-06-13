@@ -8,4 +8,11 @@
     <color name="gray_medium">#888888</color>
     <color name="gray_dark">#222222</color>
     <color name="nav_bg">#F9F9F9</color>
+
+    <color name="gradient_orange">#FF8C42</color>
+    <color name="gradient_orange_mid">#F26B5E</color>
+    <color name="gradient_purple">#7B2CBF</color>
+    <color name="purple_primary">#7B2CBF</color>
+    <color name="surface_translucent">#F2FFFFFF</color>
+    <color name="nav_bg_translucent">#E6FFFFFF</color>
 </resources>

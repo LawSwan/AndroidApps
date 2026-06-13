@@ -20,17 +20,22 @@ public class DonationStore {
     public static final String KEY_LOCATION = "pref_location";
     public static final String KEY_NOTIFICATIONS = "pref_notifications";
 
-    public static final double FLAT_FEE = 20.00;
+    public static final double DEFAULT_AMOUNT = 20.00;
 
     public static class Donation {
         public final String recipient;
         public final double amount;
+        public final String category;
+        public final String pickupTime;
         public final String date;
         public final String status;
 
-        public Donation(String recipient, double amount, String date, String status) {
+        public Donation(String recipient, double amount, String category,
+                        String pickupTime, String date, String status) {
             this.recipient = recipient;
             this.amount = amount;
+            this.category = category;
+            this.pickupTime = pickupTime;
             this.date = date;
             this.status = status;
         }
@@ -43,9 +48,9 @@ public class DonationStore {
                 .getSharedPreferences(PREFS, Context.MODE_PRIVATE);
     }
 
-    public void addDonation(String recipient) {
+    public void addDonation(String recipient, double amount, String category, String pickupTime) {
         String today = new SimpleDateFormat("MMM d, yyyy", Locale.US).format(new Date());
-        Donation d = new Donation(recipient, FLAT_FEE, today, "Pending pickup");
+        Donation d = new Donation(recipient, amount, category, pickupTime, today, "Pending pickup");
         List<Donation> list = getAll();
         list.add(0, d);
         save(list);
@@ -60,7 +65,9 @@ public class DonationStore {
                 JSONObject o = arr.getJSONObject(i);
                 list.add(new Donation(
                         o.optString("recipient"),
-                        o.optDouble("amount", FLAT_FEE),
+                        o.optDouble("amount", DEFAULT_AMOUNT),
+                        o.optString("category", ""),
+                        o.optString("pickupTime", ""),
                         o.optString("date"),
                         o.optString("status")));
             }
@@ -84,6 +91,8 @@ public class DonationStore {
                 JSONObject o = new JSONObject();
                 o.put("recipient", d.recipient);
                 o.put("amount", d.amount);
+                o.put("category", d.category);
+                o.put("pickupTime", d.pickupTime);
                 o.put("date", d.date);
                 o.put("status", d.status);
                 arr.put(o);

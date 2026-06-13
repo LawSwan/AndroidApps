@@ -15,20 +15,20 @@
         android:fillColor="#FFFFFF"
         android:pathData="M38,32 L70,32 Q72,32 72,34 L72,82 L36,82 L36,34 Q36,32 38,32 Z" />
 
-    <!-- Door inset -->
-    <path
-        android:fillColor="#E87722"
-        android:pathData="M40,36 L68,36 L68,78 L40,78 Z" />
-
-    <!-- Door panels -->
+    <!-- Door body -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M43,40 L54,40 L54,56 L43,56 Z M55,40 L66,40 L66,56 L55,56 Z M43,58 L54,58 L54,76 L43,76 Z M55,58 L66,58 L66,76 L55,76 Z" />
+        android:pathData="M40,35 L68,35 L68,82 L40,82 Z" />
+
+    <!-- Door panels (Two tall vertical rectangles make it look more like a door than a window) -->
+    <path
+        android:fillColor="#E87722"
+        android:pathData="M43,39 L53,39 L53,76 L43,76 Z M55,39 L65,39 L65,76 L55,76 Z" />
 
     <!-- Door knob -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M63,67 m-2.2,0 a2.2,2.2 0 1,0 4.4,0 a2.2,2.2 0 1,0 -4.4,0" />
+        android:fillColor="#E87722"
+        android:pathData="M62,58 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
 
     <!-- Gift box on porch -->
     <path
